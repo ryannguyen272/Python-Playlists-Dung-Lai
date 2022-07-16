@@ -7,7 +7,6 @@ Bài hoàn thiện nốt các yêu cầu mở rộng theo khóa học của Dũn
 5 - Xử lý vấn đề phát sinh nếu tên (title) của video quá dài >40 ký tự thì cắt bớt và thêm "..."
 6 - Đổi màu các video đã ấn mở
 7 - Chèn ảnh cho từng Playlist: mục này vì mình lười rồi nên các bạn tự nghiên cứu nốt, mình để trống cái ô vuông màu vàng để chèn ảnh (phương án gợi ý: thêm 1 self.img_playlist vào class Playlist, thêm link hình ảnh vào từng playlist trong file data.txt, rồi gọi ra với list tương ứng)
-Ryan - 
 """
 
 #truyền module
