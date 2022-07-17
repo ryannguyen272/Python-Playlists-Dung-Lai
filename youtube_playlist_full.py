@@ -161,7 +161,7 @@ def main():
 		text_render = font.render(str(now_videopage)+"/"+str(len_videos), True, (0,0,0))		#truyền nội dung hiển thị số trang videos đang làm việc trên tổng số trang videos hiện có
 		DISPLAY.blit(text_render, (238,48))														#vẽ nội dung ra màn hình
 
-		img = pygame.image.load('star_rating.jpg')					#nạp hình ảnh ngôi sao để hiển thị trong phần đánh giá (rate) của playlist
+		img = pygame.image.load('star_rating.jpg')					#nạp hình ảnh ngôi sao để hiển thị trong phần đánh giá (rate) của playlist | hoặc dùng lệnh vẽ ngôi sao cũng được, mình để nạp hình ảnh cho các bạn biết thêm cách chèn hình trong pygame
 		for i in range(int(playlists[now_playlist-1].rating)):		#vòng lặp cho i chạy đến hết số đánh giá (rating) của playlist đang làm việc
 			DISPLAY.blit(img,(110+i*10,79))							#mỗi 1 vòng lặp, sẽ in ra ảnh ngôi sao ở trên và dịch sang phải 10 pixel so với ngôi sao trước đó. bắt đầu vẽ từ tọa độ (110,79)
 		font = pygame.font.SysFont("sans", 15)						#truyền giá trị kiểu chữ, cỡ chữ 15
