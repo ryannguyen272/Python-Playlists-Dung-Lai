@@ -6,12 +6,12 @@ Bài hoàn thiện nốt các yêu cầu mở rộng theo khóa học của Dũn
 4 - Xử lý vấn đề số lượng Video quá nhiều bằng cách cắt trang
 5 - Xử lý vấn đề phát sinh nếu tên (title) của video quá dài >40 ký tự thì cắt bớt và thêm "..."
 6 - Đổi màu các video đã ấn mở
-7 - Chèn ảnh cho từng Playlist: mục này vì mình lười rồi nên các bạn tự nghiên cứu nốt, mình để trống cái ô vuông màu vàng để chèn ảnh (phương án gợi ý: thêm 1 self.img_playlist vào class Playlist, thêm link hình ảnh vào từng playlist trong file data.txt, rồi gọi ra với list tương ứng)
+7 - Chèn ảnh cho từng Playlist: mục này vì mình lười rồi nên các bạn tự nghiên cứu nốt, mình để trống cái ô vuông màu vàng để chèn ảnh (phương án gợi ý: thêm 1 self.img_playlist vào class Playlist để chứa link hình ảnh, thêm link hình ảnh vào từng playlist trong file data.txt, rồi gọi ra với list tương ứng)
 """
 
 #truyền module
-import pygame, sys
-import webbrowser
+import pygame, sys	#Gọi module pygame thực hiện chương trình chính
+import webbrowser	#Gọi module webbrowser để có lệnh mở link qua trình duyệt web
 
 #định nghĩa thành phần của video
 class Video:
