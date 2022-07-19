@@ -179,7 +179,7 @@ def main():
 		playlist = playlists[now_playlist-1]			#Lấy giá trị playlist đang làm việc
 		videos_btn_list = []					#làm mới lại mảng lưu trữ nút bấm các videos
 		for j in range(len(playlist.videos)):			#vòng lặp cho i chạy đến cuối danh sách videos có trong playlist đang làm việc
-			video_btn = .//TextButton(str(j+1) + ". " + playlist.videos[j].title, (280, 50 + margin*(j%row_video))) #lấy thông tin (tên nút, tọa độ nút) của từng video có trong playlist đang làm việc. j chia row_video lấy dư để video sang trang mới được in lại từ trên xuống, nếu k có dòng này, vị trí video dù có sang trang các video vẫn bị in thấp dần xuống
+			video_btn = TextButton(str(j+1) + ". " + playlist.videos[j].title, (280, 50 + margin*(j%row_video))) #lấy thông tin (tên nút, tọa độ nút) của từng video có trong playlist đang làm việc. j chia row_video lấy dư để video sang trang mới được in lại từ trên xuống, nếu k có dòng này, vị trí video dù có sang trang các video vẫn bị in thấp dần xuống
 			videos_btn_list.append(video_btn)		#thêm các thông tin các nút bấm video vào list danh sách nút bấm video
 		#Tính toán tổng số trang của playlist đang làm việc
 		len_videos = (len(videos_btn_list)-1)//row_video+1	#Tổng số trang sẽ bằng tổng số video/số video hiển thị trong 1 trang (row_video) rồi làm tròn lên (có thể dùng ceil() nhưng không muốn import math). Chỗ này nếu chia hết dư 0 mà lại công thêm 1 trang, thì trang mới sẽ bị trắng không có video nào. đề loại bỏ việc này thì trừ tổng số video đi 1 đơn vị.
